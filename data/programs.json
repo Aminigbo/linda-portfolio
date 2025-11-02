@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Tech Empowerment",
+    "description": "Free tech training, internships, and startup micro-grants for Okrika residents.",
+    "details": "Our Tech Empowerment Program provides comprehensive technology training, hands-on internships with leading tech companies, and micro-grants to support innovative startup ideas. This initiative aims to bridge the digital divide and create sustainable employment opportunities for youth in Okrika.",
+    "benefits": [
+      "Free technology training courses",
+      "Paid internship opportunities",
+      "Startup micro-grants up to ₦500,000",
+      "Mentorship from industry experts",
+      "Job placement assistance"
+    ],
+    "eligibility": "Open to all Okrika residents aged 18-35 with interest in technology",
+    "applicationLink": "/contact"
+  },
+  {
+    "name": "Social Intervention",
+    "description": "Community-based support for women and children, including micro-grants...",
+    "details": "The Social Intervention Fund focuses on empowering women and supporting children's education through micro-grants, scholarship programs, and community-based initiatives. This program aims to improve quality of life and create pathways to economic independence.",
+    "benefits": [
+      "Education scholarships for children",
+      "Women's entrepreneurship micro-grants",
+      "Healthcare assistance programs",
+      "Skills acquisition training",
+      "Childcare support services"
+    ],
+    "eligibility": "Open to women and families in Okrika constituency",
+    "applicationLink": "/contact"
+  },
+  {
+    "name": "Education",
+    "description": "Scholarship programs and educational support for students at all levels in Okrika.",
+    "details": "Our Community Education Initiative provides comprehensive educational support including scholarships, school supplies, tutoring programs, and infrastructure improvements for schools in the constituency.",
+    "benefits": [
+      "Full and partial scholarships",
+      "Free school supplies distribution",
+      "After-school tutoring programs",
+      "School infrastructure improvements",
+      "Teacher training workshops"
+    ],
+    "eligibility": "Open to students and educational institutions in Okrika constituency",
+    "applicationLink": "/contact"
+  },
+  {
+    "name": "Healthcare",
+    "description": "Improving healthcare access and wellness programs for Okrika residents.",
+    "details": "The Healthcare Access Program focuses on making quality healthcare services available to all residents through mobile clinics, health screenings, medication assistance, and health education programs.",
+    "benefits": [
+      "Free health screenings",
+      "Mobile clinic services",
+      "Medication assistance",
+      "Health education workshops",
+      "Partnerships with healthcare providers"
+    ],
+    "eligibility": "Open to all residents of Okrika constituency",
+    "applicationLink": "/contact"
+  }
+]
+

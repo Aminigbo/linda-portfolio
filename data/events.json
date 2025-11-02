@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Monthly Town Hall",
+    "description": "Regular monthly meetings with constituents to discuss issues, concerns, and receive feedback.",
+    "frequency": "Monthly",
+    "nextDate": "2024-12-15",
+    "time": "10:00 AM",
+    "location": "Okrika Town Hall",
+    "type": "Community Engagement"
+  },
+  {
+    "name": "Quarterly Tech Bootcamp",
+    "description": "Intensive 4-week technology training program covering web development, digital skills, and entrepreneurship.",
+    "frequency": "Quarterly",
+    "nextDate": "2025-01-10",
+    "time": "9:00 AM",
+    "location": "Tech Hub, Okrika",
+    "type": "Tech Empowerment"
+  },
+  {
+    "name": "Annual Women & Children Outreach",
+    "description": "Annual event providing support, resources, and empowerment programs for women and children in the community.",
+    "frequency": "Annual",
+    "nextDate": "2025-03-20",
+    "time": "9:00 AM",
+    "location": "Community Center, Okrika",
+    "type": "Social Intervention"
+  }
+]
+
