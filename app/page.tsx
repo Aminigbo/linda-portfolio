@@ -1,76 +1,77 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import programsData from '@/data/programs.json';
 import testimonialsData from '@/data/testimonials.json';
 import AnimateOnScroll from './components/AnimateOnScroll';
+import HeroCarousel from './components/HeroCarousel';
 
 export default function Home() {
   const featuredPrograms = programsData.slice(0, 4);
   const featuredTestimonials = testimonialsData.slice(0, 3);
 
+  const heroSlides = [
+    {
+      title: 'Transforming Okrika with Visionary Leadership, Service & Results',
+      subtitle: 'Welcome',
+      description: 'Hon. Lindah, Member of Rivers State House of Assembly, representing Okrika Constituency. Dedicated to technology empowerment, social intervention, and community development.',
+      link: '/programs',
+      linkText: 'View More',
+    },
+    {
+      title: 'Driving Development, Opportunity & Hope for Every Okrika Citizen',
+      subtitle: 'Tech Programs',
+      description: 'Building digital skills and creating opportunities for the Okrika community through comprehensive technology training and empowerment programs.',
+      link: '/programs',
+      linkText: 'Explore Programs',
+    },
+    {
+      title: 'Committed to People-Focused Representation that Delivers Real Impact',
+      subtitle: 'Community Support',
+      description: 'Supporting women, children, and families in need through transparent and impactful social intervention initiatives.',
+      link: '/reports',
+      linkText: 'View Impact',
+    }
+  ];
+
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-white py-20 lg:py-32 min-h-[600px] flex items-center">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Text Content */}
-            <AnimateOnScroll animation="slide-left">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                Empowering
-                <br />
-                Okrika Through
-                <br />
-                Action & Impact
-          </h1>
-              <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">
-                Hon. Lindah, Member of Rivers State House of Assembly, representing Okrika Constituency. 
-                Dedicated to technology empowerment, social intervention, and community development.
-              </p>
-              <Link
-                href="/programs"
-                className="inline-block border-2 border-yellow-400 bg-white text-gray-900 px-8 py-3 font-bold uppercase tracking-wide hover:bg-yellow-400 hover:text-white transition-colors"
-              >
-                View More
-              </Link>
+      {/* Hero Section - Carousel */}
+      <HeroCarousel slides={heroSlides} autoPlayInterval={6000} />
+
+      {/* Three small cards */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <AnimateOnScroll animation="slide-up" delay={100}>
+              <div className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow border border-gray-100">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                  Quality Representation
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Ensuring the voice, needs, and priorities of Okrika people are boldly presented and defended at the State Assembly.
+                </p>
+              </div>
             </AnimateOnScroll>
 
-            {/* Right Side - Graphic Element */}
-            <AnimateOnScroll animation="slide-right" delay={100}>
-              <div className="relative h-[500px] flex items-center justify-center">
-                <div className="relative w-full h-full">
-                  {/* Large Letter L for Lindah */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-[300px] md:text-[400px] font-serif font-bold text-gray-900 leading-none opacity-90">
-                      L
-                    </div>
-                  </div>
-                  
-                  {/* Yellow Geometric Shapes */}
-                  <div className="absolute top-10 right-10 w-24 h-24 bg-yellow-400 rounded-full"></div>
-                  <div className="absolute top-32 right-32 w-16 h-16 bg-yellow-400 rounded-full"></div>
-                  <div className="absolute bottom-20 right-20 w-32 h-32 bg-yellow-400 rounded-full opacity-80"></div>
-                  
-                  {/* Semi-circles */}
-                  <div className="absolute top-16 left-16 w-20 h-20 border-8 border-yellow-400 rounded-full border-b-transparent border-r-transparent"></div>
-                  <div className="absolute bottom-32 left-10 w-16 h-16 border-8 border-yellow-400 rounded-full border-t-transparent border-l-transparent"></div>
-                  
-                  {/* Curved lines */}
-                  <svg className="absolute top-24 right-24 w-32 h-32" viewBox="0 0 100 100" fill="none">
-                    <path d="M 10 50 Q 30 30, 50 50 T 90 50" stroke="#FACC15" strokeWidth="3" fill="none"/>
-                  </svg>
-                  <svg className="absolute bottom-24 left-24 w-40 h-40" viewBox="0 0 100 100" fill="none">
-                    <path d="M 50 10 Q 70 30, 50 50 T 50 90" stroke="#FACC15" strokeWidth="3" fill="none"/>
-                  </svg>
-                  
-                  {/* Dotted pattern */}
-                  <div className="absolute top-1/4 right-1/4 w-16 h-16 opacity-60">
-                    <div className="grid grid-cols-4 gap-1 w-full h-full">
-                      {Array.from({ length: 16 }).map((_, i) => (
-                        <div key={i} className="w-2 h-2 bg-gray-900 rounded-full"></div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+            <AnimateOnScroll animation="slide-up" delay={200}>
+              <div className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow border border-gray-100">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                  Community Development
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Driving impactful projects and interventions that uplift communities, improve living standards, and create lasting progress.
+                </p>
+              </div>
+            </AnimateOnScroll>
+
+            <AnimateOnScroll animation="slide-up" delay={300}>
+              <div className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-lg transition-shadow border border-gray-100">
+                <h3 className="text-xl md:text-xl font-bold text-gray-900 mb-4">
+                  Youth & Women Empowerment
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Promoting programs that equip young people and women with opportunities, skills, and support to thrive.
+                </p>
               </div>
             </AnimateOnScroll>
           </div>
@@ -84,83 +85,91 @@ export default function Home() {
             {/* Left Column - Text Content */}
             <AnimateOnScroll animation="slide-left">
               <div className="space-y-6">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                  Introducing Hon. Lindah's Commitment to Okrika Constituency
-                </h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  A comprehensive approach to community development and empowerment that ensures you WIN. 
-                  Our initiatives are designed as one integrated system that addresses everything about 
-                  your community's needs, and we work transparently with the resources we have.
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Introducing Hon. Lindah's Commitment to Okrika Constituency
+                  </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    My dedication to the people of Okrika goes beyond legislative duties; it is a personal vow to
+                    champion development, protect community interests, and ensure every citizen feels the impact
+                    of effective governance. I am committed to representing our constituency with integrity, courage,
+                    and unwavering focus, pushing for policies and initiatives that address our most pressing needs.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-base text-gray-700 leading-relaxed mb-4">
+                    From accessible education and improved infrastructure to economic empowerment and
+                    community welfare, my mission is clear: to deliver responsible leadership that listens, serves,
+                    and produces measurable results. Together, we will build an Okrika where opportunities are
+                    abundant, voices are heard, and progress is shared by all.
+                  </p>
+                </div>
+
+
+
+                {/* <p className="text-base text-gray-700 italic">
+                  Yes, it is true. Check our reports and testimonials yourself.
+                </p> */}
+
+                <p className="text-lg text-gray-900 font-semibold mt-8" style={{ fontFamily: 'cursive' }}>
+                  — Hon. Lindah
                 </p>
-              </div>
-              
-              <div>
-                <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  We created the <strong>Tech Empowerment Program</strong> for every skill your community 
-                  needs to thrive in the digital economy. The <strong>Social Intervention Fund</strong> for 
-                  women, children, and families in need. <strong>Community Engagement</strong> for transparent 
-                  governance and direct dialogue with constituents.
-                </p>
-              </div>
-
-               
-
-              <p className="text-base text-gray-700 italic">
-                Yes, it is true. Check our reports and testimonials yourself.
-              </p> 
-
-              <p className="text-lg text-gray-900 font-semibold mt-8" style={{ fontFamily: 'cursive' }}>
-                — Hon. Lindah
-              </p>
               </div>
             </AnimateOnScroll>
 
             {/* Right Column - Quote Box */}
             <AnimateOnScroll animation="slide-right" delay={200}>
               <div className="bg-blue-50 rounded-lg p-8 md:p-10 relative">
-              {/* Large Quotation Marks */}
-              <div className="absolute top-6 left-6">
-                <svg className="w-16 h-16 text-blue-600 opacity-30" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                </svg>
-              </div>
+                {/* Large Quotation Marks */}
+                <div className="absolute top-6 left-6">
+                  <svg className="w-16 h-16 text-blue-600 opacity-30" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.996 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.984zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                  </svg>
+                </div>
 
-              <div className="relative z-10 pt-8">
-                <p className="text-xl md:text-2xl font-bold text-teal-700 mb-6 leading-relaxed">
-                  Community members are the backbone of society.
-                  <br />
-                  We believe that it's time to give control back to <span className="text-blue-900">YOU</span>.
-                </p>
+                <div className="relative z-10 pt-8">
+                  {/* Professional Portrait Photo */}
+                  <div className="mb-6 rounded-lg overflow-hidden shadow-lg max-w-xs mx-auto">
+                    <Image
+                    // Image from the public folder
+                      src="/original.jpeg"
+                      alt="Hon. Lindah - Member of Rivers State House of Assembly"
+                      width={200}
+                      height={250}
+                      className="w-full h-auto object-cover rounded-lg"
+                      priority
+                    />
+                  </div>
 
-                <p className="text-base text-gray-800 leading-relaxed mb-8">
+                  {/* <p className="text-base text-gray-800 leading-relaxed mb-8">
                   Our programs are that control. An entire ecosystem of everything you need to 
                   build a successful, empowered community. All for the commitment of <strong>ONE 
                   dedicated representative</strong>.
-                </p>
+                </p> */}
 
-                {/* Signature Section */}
-                <div className="flex items-start space-x-4 pt-4 border-t border-blue-200">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                      </svg>
+                  {/* Signature Section */}
+                  <div className="flex items-start space-x-4 pt-4 border-t border-blue-200">
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center">
+                        <svg className="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <p className="text-lg text-gray-900 font-semibold mb-1" style={{ fontFamily: 'cursive' }}>
-                      Hon. Lindah
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Member, Rivers State House of Assembly
-                      <br />
-                      Representing Okrika Constituency
-                    </p>
+                    <div>
+                      <p className="text-lg text-gray-900 font-semibold mb-1" style={{ fontFamily: 'cursive' }}>
+                        Hon. Lindah
+                      </p>
+                      <p className="text-sm text-gray-600">
+                        Member, Rivers State House of Assembly
+                        <br />
+                        Representing Okrika Constituency
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </AnimateOnScroll>
           </div>
         </div>
@@ -232,12 +241,12 @@ export default function Home() {
                     <p className="text-gray-600 mb-6">
                       {program.description}
                     </p>
-                    <Link
+                    {/* <Link
                       href="/programs"
                       className="text-blue-600 font-semibold hover:text-blue-800"
                     >
                       Learn More →
-                    </Link>
+                    </Link> */}
                   </div>
                 </AnimateOnScroll>
               ))}
@@ -288,7 +297,7 @@ export default function Home() {
               </Link>
             </div>
           </AnimateOnScroll>
-          
+
           {/* Blog Cards Grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {/* Blog Card 1 */}
@@ -416,18 +425,18 @@ export default function Home() {
             {featuredTestimonials.map((testimonial, index) => (
               <AnimateOnScroll key={index} animation="slide-up" delay={index * 100 + 200}>
                 <div className="bg-white rounded-lg shadow-md p-6">
-                <p className="text-gray-700 mb-4 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="border-t border-gray-200 pt-4">
-                  <p className="font-semibold text-gray-900">
-                    {testimonial.name}
+                  <p className="text-gray-700 mb-4 italic">
+                    "{testimonial.quote}"
                   </p>
-                  <p className="text-sm text-gray-600">
-                    {testimonial.role}
-                  </p>
+                  <div className="border-t border-gray-200 pt-4">
+                    <p className="font-semibold text-gray-900">
+                      {testimonial.name}
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      {testimonial.role}
+                    </p>
+                  </div>
                 </div>
-              </div>
               </AnimateOnScroll>
             ))}
           </div>

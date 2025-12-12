@@ -13,8 +13,8 @@ export default function Navigation() {
     { href: '/programs', label: 'Programs' },
     { href: '/blog', label: 'Blog' },
     { href: '/gallery', label: 'Gallery' },
-    { href: '/reports', label: 'Reports' },
-    { href: '/events', label: 'Events' },
+    // { href: '/reports', label: 'Reports' },
+    // { href: '/events', label: 'Events' },
     { href: '/contact', label: 'Contact' },
   ];
 

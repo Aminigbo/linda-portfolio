@@ -1,7 +1,7 @@
 [
   {
     "name": "Tech Empowerment",
-    "description": "Free tech training, internships, and startup micro-grants for Okrika residents.",
+    "description": "Providing digital skills training, tech tools, and exposure opportunities to prepare youths and women for global technology-driven careers.",
     "details": "Our Tech Empowerment Program provides comprehensive technology training, hands-on internships with leading tech companies, and micro-grants to support innovative startup ideas. This initiative aims to bridge the digital divide and create sustainable employment opportunities for youth in Okrika.",
     "benefits": [
       "Free technology training courses",
@@ -15,7 +15,7 @@
   },
   {
     "name": "Social Intervention",
-    "description": "Community-based support for women and children, including micro-grants...",
+    "description": "Supporting vulnerable families through welfare programs, community relief efforts, and targeted assistance aimed at improving daily living conditions.",
     "details": "The Social Intervention Fund focuses on empowering women and supporting children's education through micro-grants, scholarship programs, and community-based initiatives. This program aims to improve quality of life and create pathways to economic independence.",
     "benefits": [
       "Education scholarships for children",
@@ -28,8 +28,8 @@
     "applicationLink": "/contact"
   },
   {
-    "name": "Education",
-    "description": "Scholarship programs and educational support for students at all levels in Okrika.",
+    "name": "Educational Advancement Program",
+    "description": "Promoting quality learning through scholarships, school support initiatives, and academic resources for students across Okrika.",
     "details": "Our Community Education Initiative provides comprehensive educational support including scholarships, school supplies, tutoring programs, and infrastructure improvements for schools in the constituency.",
     "benefits": [
       "Full and partial scholarships",
@@ -42,8 +42,8 @@
     "applicationLink": "/contact"
   },
   {
-    "name": "Healthcare",
-    "description": "Improving healthcare access and wellness programs for Okrika residents.",
+    "name": "Health & Community Wellbeing",
+    "description": "Implementing health outreaches, awareness campaigns, and community wellness initiatives to ensure a healthier constituency.",
     "details": "The Healthcare Access Program focuses on making quality healthcare services available to all residents through mobile clinics, health screenings, medication assistance, and health education programs.",
     "benefits": [
       "Free health screenings",
