@@ -16,6 +16,7 @@ export default function Home() {
       description: 'Hon. Lindah, Member of Rivers State House of Assembly, representing Okrika Constituency. Dedicated to technology empowerment, social intervention, and community development.',
       link: '/programs',
       linkText: 'View More',
+      image: '/slides/s1.jpeg',
     },
     {
       title: 'Driving Development, Opportunity & Hope for Every Okrika Citizen',
@@ -23,6 +24,7 @@ export default function Home() {
       description: 'Building digital skills and creating opportunities for the Okrika community through comprehensive technology training and empowerment programs.',
       link: '/programs',
       linkText: 'Explore Programs',
+      image: '/slides/s2.jpeg',
     },
     {
       title: 'Committed to People-Focused Representation that Delivers Real Impact',
@@ -30,6 +32,7 @@ export default function Home() {
       description: 'Supporting women, children, and families in need through transparent and impactful social intervention initiatives.',
       link: '/reports',
       linkText: 'View Impact',
+      image: '/slides/s3.jpeg',
     }
   ];
 
