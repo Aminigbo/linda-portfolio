@@ -10,42 +10,42 @@ const galleryImages = [
     title: 'Tech Bootcamp 2024',
     category: 'Tech Empowerment',
     description: 'Students during the intensive coding workshop',
-    image: '/gallery/placeholder1.jpg', // Replace with actual images
+    image: '../slides/s1.jpeg', // Replace with actual images
   },
   {
     id: 2,
     title: 'Community Town Hall',
     category: 'Events',
     description: 'Monthly town hall meeting with constituents',
-    image: '/gallery/placeholder2.jpg',
+    image: '../slides/s2.jpeg',
   },
   {
     id: 3,
     title: 'Women Empowerment Workshop',
     category: 'Social Intervention',
     description: 'Training session for women entrepreneurs',
-    image: '/gallery/placeholder3.jpg',
+    image: '../slides/s3.jpeg',
   },
   {
     id: 4,
     title: 'Graduation Ceremony',
     category: 'Tech Empowerment',
     description: 'Celebrating our program graduates',
-    image: '/gallery/placeholder4.jpg',
+    image: '../slides/s4.jpeg',
   },
   {
     id: 5,
     title: 'Youth Engagement',
     category: 'Events',
     description: 'Engaging with young people in Okrika',
-    image: '/gallery/placeholder5.jpg',
+    image: '../slides/s5.jpeg',
   },
   {
     id: 6,
     title: 'Scholarship Distribution',
     category: 'Social Intervention',
     description: 'Supporting students with education aid',
-    image: '/gallery/placeholder6.jpg',
+    image: '../slides/s6.jpeg',
   },
 ];
 
@@ -101,7 +101,7 @@ export default function GalleryPage() {
               <div className="relative h-64 bg-gray-200">
                 {/* Placeholder for image - replace with actual Image component when images are available */}
                 <div className="w-full h-full flex items-center justify-center text-gray-400">
-                  <svg
+                  {/* <svg
                     className="w-16 h-16"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -113,7 +113,8 @@ export default function GalleryPage() {
                       strokeWidth={2}
                       d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
                     />
-                  </svg>
+                  </svg> */}
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className="p-4">

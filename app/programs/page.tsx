@@ -79,7 +79,7 @@ export default function ProgramsPage() {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href={program.applicationLink}
                   className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-center"
@@ -92,7 +92,7 @@ export default function ProgramsPage() {
                 >
                   Learn More
                 </Link>
-              </div>
+              </div> */}
               </div>
             </AnimateOnScroll>
           ))}
