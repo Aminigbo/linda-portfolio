@@ -1,11 +1,66 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { promises as fs } from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import programsData from '@/data/programs.json';
 import testimonialsData from '@/data/testimonials.json';
 import AnimateOnScroll from './components/AnimateOnScroll';
 import HeroCarousel from './components/HeroCarousel';
 
-export default function Home() {
+interface BlogPost {
+  slug: string;
+  frontmatter: {
+    title: string;
+    date: string;
+    excerpt: string;
+    author?: string;
+    image?: string;
+  };
+}
+
+async function getLatestBlogPosts(limit: number = 3): Promise<BlogPost[]> {
+  const contentDirectory = path.join(process.cwd(), 'content', 'blog');
+
+  try {
+    const files = await fs.readdir(contentDirectory);
+    const posts = await Promise.all(
+      files
+        .filter((file) => file.endsWith('.md') || file.endsWith('.mdx'))
+        .map(async (file) => {
+          const filePath = path.join(contentDirectory, file);
+          const fileContents = await fs.readFile(filePath, 'utf8');
+          const { data } = matter(fileContents);
+
+          return {
+            slug: file.replace(/\.(md|mdx)$/, ''),
+            frontmatter: {
+              title: data.title || 'Untitled',
+              date: data.date || '',
+              excerpt: data.excerpt || '',
+              author: data.author || 'Hon. Lindah',
+              image: data.image || '',
+            },
+          };
+        })
+    );
+
+    // Sort by date, newest first, and limit to specified number
+    return posts
+      .sort((a, b) => {
+        const dateA = new Date(a.frontmatter.date).getTime();
+        const dateB = new Date(b.frontmatter.date).getTime();
+        return dateB - dateA;
+      })
+      .slice(0, limit);
+  } catch (error) {
+    // If directory doesn't exist or has no posts, return empty array
+    return [];
+  }
+}
+
+export default async function Home() {
+  const featuredBlogPosts = await getLatestBlogPosts(3);
   const featuredPrograms = programsData.slice(0, 4);
   const featuredTestimonials = testimonialsData.slice(0, 3);
 
@@ -135,7 +190,7 @@ export default function Home() {
                   {/* Professional Portrait Photo */}
                   <div className="mb-6 rounded-lg overflow-hidden shadow-lg max-w-xs mx-auto">
                     <Image
-                    // Image from the public folder
+                      // Image from the public folder
                       src="/original.jpeg"
                       alt="Hon. Lindah - Member of Rivers State House of Assembly"
                       width={200}
@@ -303,110 +358,49 @@ export default function Home() {
 
           {/* Blog Cards Grid */}
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Blog Card 1 */}
-            <AnimateOnScroll animation="slide-up" delay={200}>
-              <div className="bg-white hover:shadow-lg transition-shadow">
-                {/* Image */}
-                <div className="w-full h-64 mb-4 overflow-hidden">
-                  <img
-                    src="https://www.unocha.org/sites/default/files/styles/full_width_2_1_246/public/2024-07/DSC00206.jpg.webp"
-                    alt="Community program"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Content with padding */}
-                <div className="px-4 pb-4">
-                  {/* Category */}
-                  <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
-                    Story
-                  </div>
-                  {/* Headline */}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 leading-tight">
-                    "It gave us the strength to believe in tomorrow." How our programs help families prepare for the future
-                  </h3>
-                  {/* Date and Read More */}
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">23 December 2024</span>
-                    <Link
-                      href="/blog"
-                      className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                    >
-                      Read more &gt;
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </AnimateOnScroll>
-
-            {/* Blog Card 2 */}
-            <AnimateOnScroll animation="slide-up" delay={300}>
-              <div className="bg-white hover:shadow-lg transition-shadow">
-                {/* Image */}
-                <div className="w-full h-64 mb-4 overflow-hidden">
-                  <img
-                    src="https://www.unocha.org/sites/default/files/styles/full_width_2_1_246/public/2024-07/DSC00206.jpg.webp"
-                    alt="Community engagement"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Content with padding */}
-                <div className="px-4 pb-4">
-                  {/* Category */}
-                  <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
-                    News
-                  </div>
-                  {/* Headline */}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 leading-tight">
-                    Today's highlights: Tech Bootcamp Graduation, Women's Empowerment Launch, Quarterly Reports
-                  </h3>
-                  {/* Date and Read More */}
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">10 December 2024</span>
-                    <Link
-                      href="/blog"
-                      className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                    >
-                      Read more &gt;
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </AnimateOnScroll>
-
-            {/* Blog Card 3 */}
-            <AnimateOnScroll animation="slide-up" delay={400}>
-              <div className="bg-white hover:shadow-lg transition-shadow">
-                {/* Image */}
-                <div className="w-full h-64 mb-4 overflow-hidden">
-                  <img
-                    src="https://www.unocha.org/sites/default/files/styles/full_width_2_1_246/public/2024-07/DSC00206.jpg.webp"
-                    alt="Program impact"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* Content with padding */}
-                <div className="px-4 pb-4">
-                  {/* Category */}
-                  <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
-                    News
-                  </div>
-                  {/* Headline */}
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 leading-tight">
-                    Community impact: Q3 2024 transparency report shows continued progress in Okrika
-                  </h3>
-                  {/* Date and Read More */}
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">8 December 2024</span>
-                    <Link
-                      href="/blog"
-                      className="text-blue-600 hover:text-blue-800 font-medium text-sm"
-                    >
-                      Read more &gt;
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </AnimateOnScroll>
+            {
+              featuredBlogPosts.map((post, index) => (
+                <AnimateOnScroll key={post.slug} animation="slide-up" delay={index * 100 + 200}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="bg-white hover:shadow-lg transition-shadow block"
+                  >
+                    {/* Image */}
+                    <div className="w-full h-64 mb-4 overflow-hidden">
+                      <img
+                        src={post.frontmatter.image}
+                        alt={post.frontmatter.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {/* Content with padding */}
+                    <div className="px-4 pb-4">
+                      {/* Category */}
+                      <div className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
+                        News
+                      </div>
+                      {/* Headline */}
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3 leading-tight">
+                        {post.frontmatter.title}
+                      </h3>
+                      {/* Date and Read More */}
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-500">
+                          {new Date(post.frontmatter.date).toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: 'long',
+                            day: 'numeric',
+                          })}
+                        </span>
+                        <span className="text-blue-600 hover:text-blue-800 font-medium text-sm">
+                          Read more &gt;
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                </AnimateOnScroll>
+              ))
+            }
           </div>
         </div>
       </section>
