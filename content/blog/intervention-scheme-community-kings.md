@@ -2,7 +2,7 @@
 title: Hon. Linda Somiari Kicks Off Intervention Scheme, Awards ₦10 Million Each to Okrika Community Kings for Empowerment
 date: 2024-06-01
 excerpt: Hon. Linda Somiari Stewart launches major community intervention scheme, awarding ₦10 million each to Okrika community kings to support grassroots development and empowerment programs.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s4.jpeg
 ---
 

@@ -47,6 +47,125 @@ const galleryImages = [
     description: 'Supporting students with education aid',
     image: '../slides/s6.jpeg',
   },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/s7.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/s8.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/s9.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/s10.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/s11.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/12.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/13.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/14.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/15.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/16.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/17.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/18.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/19.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/20.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/21.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/22.jpeg',
+  },
+  {
+    id: 6,
+    title: 'Scholarship Distribution',
+    category: 'Social Intervention',
+    description: 'Supporting students with education aid',
+    image: '../slides/23.jpeg',
+  },
 ];
 
 const categories = ['All', 'Tech Empowerment', 'Social Intervention', 'Events'];
@@ -75,7 +194,7 @@ export default function GalleryPage() {
         </AnimateOnScroll>
 
         {/* Category Filter */}
-        <AnimateOnScroll animation="slide-up" delay={200}>
+        {/* <AnimateOnScroll animation="slide-up" delay={200}>
           <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
@@ -91,7 +210,7 @@ export default function GalleryPage() {
             </button>
           ))}
           </div>
-        </AnimateOnScroll>
+        </AnimateOnScroll> */}
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,7 +236,7 @@ export default function GalleryPage() {
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                 </div>
               </div>
-              <div className="p-4">
+              {/* <div className="p-4">
                 <span className="text-sm text-blue-600 font-semibold">
                   {item.category}
                 </span>
@@ -127,7 +246,7 @@ export default function GalleryPage() {
                 <p className="text-gray-600 text-sm">
                   {item.description}
                 </p>
-              </div>
+              </div> */}
               </div>
             </AnimateOnScroll>
           ))}

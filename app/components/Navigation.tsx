@@ -31,7 +31,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold text-gray-900">
-              Hon. Lindah
+              Hon. Linda
             </span>
             <span className="text-sm text-gray-600 hidden sm:inline">
               | Okrika Constituency

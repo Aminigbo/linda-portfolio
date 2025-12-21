@@ -2,7 +2,7 @@
 title: Hon. Linda Somiari-Stewart Brings Hope and Healing to Little Gift Shadrack
 date: 2024-03-14
 excerpt: In a remarkable act of compassion, Hon. Linda Somiari-Stewart ensured that little Gift Shadrack received full medical care for his serious kidney condition, bringing hope and healing to his family.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s2.jpeg
 ---
 

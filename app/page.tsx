@@ -38,7 +38,7 @@ async function getLatestBlogPosts(limit: number = 3): Promise<BlogPost[]> {
               title: data.title || 'Untitled',
               date: data.date || '',
               excerpt: data.excerpt || '',
-              author: data.author || 'Hon. Lindah',
+              author: data.author || 'Hon. Linda',
               image: data.image || '',
             },
           };
@@ -68,7 +68,7 @@ export default async function Home() {
     {
       title: 'Transforming Okrika with Visionary Leadership, Service & Results',
       subtitle: 'Welcome',
-      description: 'Hon. Lindah, Member of Rivers State House of Assembly, representing Okrika Constituency. Dedicated to technology empowerment, social intervention, and community development.',
+      description: 'Hon. Linda, Member of Rivers State House of Assembly, representing Okrika Constituency. Dedicated to technology empowerment, social intervention, and community development.',
       link: '/programs',
       linkText: 'View More',
       image: '/slides/s1.jpeg',
@@ -145,7 +145,7 @@ export default async function Home() {
               <div className="space-y-6">
                 <div>
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Introducing Hon. Lindah's Commitment to Okrika Constituency
+                    Introducing Hon. Linda's Commitment to Okrika Constituency
                   </h2>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     My dedication to the people of Okrika goes beyond legislative duties; it is a personal vow to
@@ -171,7 +171,7 @@ export default async function Home() {
                 </p> */}
 
                 <p className="text-lg text-gray-900 font-semibold mt-8" style={{ fontFamily: 'cursive' }}>
-                  — Hon. Lindah
+                  — Hon. Linda
                 </p>
               </div>
             </AnimateOnScroll>
@@ -192,7 +192,7 @@ export default async function Home() {
                     <Image
                       // Image from the public folder
                       src="/original.jpeg"
-                      alt="Hon. Lindah - Member of Rivers State House of Assembly"
+                      alt="Hon. Linda - Member of Rivers State House of Assembly"
                       width={200}
                       height={250}
                       className="w-full h-auto object-cover rounded-lg"
@@ -217,7 +217,7 @@ export default async function Home() {
                     </div>
                     <div>
                       <p className="text-lg text-gray-900 font-semibold mb-1" style={{ fontFamily: 'cursive' }}>
-                        Hon. Lindah
+                        Hon. Linda
                       </p>
                       <p className="text-sm text-gray-600">
                         Member, Rivers State House of Assembly
@@ -238,36 +238,36 @@ export default async function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimateOnScroll animation="slide-up">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8">
-              Funding for Okrika Programs
+            Hon. Linda’s Impact
             </h2>
           </AnimateOnScroll>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:flex lg:justify-around">
             <AnimateOnScroll animation="slide-up" delay={200}>
               <div>
-                <div className="text-sm text-gray-600 mb-2">Total requirements (USD)</div>
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">6.5M</div>
-                <div className="text-sm text-gray-500">2025</div>
+                <div className="text-sm text-gray-600 mb-2">Constituents Reached</div>
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">3,000+</div>
+                {/* <div className="text-sm text-gray-500">2025</div> */}
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="slide-up" delay={300}>
               <div>
-                <div className="text-sm text-gray-600 mb-2">Opening balance (USD)</div>
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">9,497</div>
-                <div className="text-sm text-gray-500">2025</div>
+                <div className="text-sm text-gray-600 mb-2">Opening balance</div>
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">500+</div>
+                {/* <div className="text-sm text-gray-500">2025</div> */}
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="slide-up" delay={400}>
               <div>
-                <div className="text-sm text-gray-600 mb-2">Earmarked funding (USD)</div>
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">1.9M</div>
-                <div className="text-sm text-gray-500">2025</div>
+                <div className="text-sm text-gray-600 mb-2">Projects Delivered</div>
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">20+</div>
+                {/* <div className="text-sm text-gray-500">2025</div> */}
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="slide-up" delay={500}>
               <div>
-                <div className="text-sm text-gray-600 mb-2">Total (USD)</div>
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">1.9M</div>
-                <div className="text-sm text-gray-500">2025</div>
+                <div className="text-sm text-gray-600 mb-2">Legislative Actions</div>
+                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-1">30+</div>
+                {/* <div className="text-sm text-gray-500">2025</div> */}
               </div>
             </AnimateOnScroll>
           </div>
@@ -290,7 +290,7 @@ export default async function Home() {
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Side - Programs */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {featuredPrograms.map((program, index) => (
+              {featuredPrograms.slice(1, 3).map((program, index) => (
                 <AnimateOnScroll key={index} animation="slide-up" delay={index * 100 + 200}>
                   <div className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow">
                     <h3 className="text-l font-bold text-gray-900 mb-4">

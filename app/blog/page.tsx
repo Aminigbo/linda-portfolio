@@ -33,7 +33,7 @@ async function getBlogPosts(): Promise<BlogPost[]> {
               title: data.title || 'Untitled',
               date: data.date || '',
               excerpt: data.excerpt || '',
-              author: data.author || 'Hon. Lindah',
+              author: data.author || 'Hon. Linda',
             },
           };
         })
@@ -131,7 +131,7 @@ export default async function BlogPage() {
                 This quarter's program saw record enrollment and success rates.
               </p>
               <div className="text-sm text-gray-500">
-                By Hon. Lindah
+                By Hon. Linda
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
@@ -146,7 +146,7 @@ export default async function BlogPage() {
                 Applications are now open for the first cohort.
               </p>
               <div className="text-sm text-gray-500">
-                By Hon. Lindah
+                By Hon. Linda
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-md p-6">
@@ -161,7 +161,7 @@ export default async function BlogPage() {
                 Transparency is our commitment.
               </p>
               <div className="text-sm text-gray-500">
-                By Hon. Lindah
+                By Hon. Linda
               </div>
             </div>
           </div>

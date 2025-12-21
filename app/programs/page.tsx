@@ -71,7 +71,7 @@ export default function ProgramsPage() {
               {/* Eligibility */}
               <div className="bg-blue-50 rounded-lg p-6 mb-6">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Eligibility
+                Ultimate Goal
                 </h3>
                 <p className="text-gray-700">
                   {program.eligibility}

@@ -2,7 +2,7 @@
 title: Hon. Linda Stewart Empowers Okrika Youth, Hands Over Ogoloma Youth Development Centre
 date: 2024-02-10
 excerpt: Hon. Linda Somiari Stewart hands over the Ogoloma Youth Development Centre, a hub for skills acquisition, leadership training, and community engagement for Okrika's young people.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s6.jpeg
 ---
 

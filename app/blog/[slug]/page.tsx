@@ -29,7 +29,7 @@ async function getBlogPost(slug: string) {
           title: data.title || 'Untitled',
           date: data.date || '',
           excerpt: data.excerpt || '',
-          author: data.author || 'Hon. Lindah',
+          author: data.author || 'Hon. Linda',
         },
         content,
       };
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
   }
   
   return {
-    title: `${post.frontmatter.title} | Hon. Lindah Blog`,
+    title: `${post.frontmatter.title} | Hon. Linda Blog`,
     description: post.frontmatter.excerpt,
   };
 }

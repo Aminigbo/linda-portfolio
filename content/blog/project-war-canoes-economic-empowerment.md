@@ -2,7 +2,7 @@
 title: Hon. Linda Somiari-Stewart Launches "Project War Canoes of Economic Empowerment" in Okrika
 date: 2024-01-04
 excerpt: Hon. Linda Somiari-Stewart launches groundbreaking initiative to revive war canoe houses' socio-economic relevance while promoting unity and sustainable development in Okrika community.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s4.jpeg
 ---
 

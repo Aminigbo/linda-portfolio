@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hon. Lindah - Member, Rivers State House of Assembly | Okrika Constituency",
-  description: "Official portfolio of Hon. Lindah, Member of Rivers State House of Assembly, representing Okrika Constituency. Explore programs, initiatives, and community engagements including Tech Empowerment and Social Intervention Fund.",
+  title: "Hon. Linda - Member, Rivers State House of Assembly | Okrika Constituency",
+  description: "Official portfolio of Hon. Linda, Member of Rivers State House of Assembly, representing Okrika Constituency. Explore programs, initiatives, and community engagements including Tech Empowerment and Social Intervention Fund.",
   keywords: ["Rivers State", "Okrika", "House of Assembly", "Tech Empowerment", "Social Intervention", "Community Development"],
 };
 
@@ -35,7 +35,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-4">Hon. Lindah</h3>
+                <h3 className="text-lg font-semibold mb-4">Hon. Linda</h3>
                 <p className="text-gray-400">
                   Member, Rivers State House of Assembly
                   <br />
@@ -61,7 +61,7 @@ export default function RootLayout({
               </div>
             </div>
             <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-              <p>&copy; {new Date().getFullYear()} Hon. Lindah. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Hon. Linda. All rights reserved.</p>
             </div>
           </div>
         </footer>

@@ -2,7 +2,7 @@
 title: Hon. Mrs. Linda Somiari Stewart Commissions Multi-Purpose Town Hall Project in Ibaka Community
 date: 2024-05-20
 excerpt: Hon. Linda Somiari Stewart commissions a landmark town hall in Ibaka Community, serving as both a civic hub and revenue-generating asset for sustainable community development.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s3.jpeg
 ---
 

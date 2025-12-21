@@ -1,12 +1,12 @@
 {
-  "project_title": "Lindah Portfolio Website",
-  "prepared_for": "Hon. Lindah, Member, Rivers State House of Assembly",
+  "project_title": "Linda Portfolio Website",
+  "prepared_for": "Hon. Linda, Member, Rivers State House of Assembly",
   "constituency": "Okrika",
   "date": "November 2025",
-  "overview": "The Lindah Portfolio Website is a personal and constituency-focused digital platform highlighting Hon. Lindah\u2019s programs, values, and engagements with her constituency. It provides transparency and information about her Tech Empowerment Program, Social Intervention Fund, and other community efforts.",
+  "overview": "The Linda Portfolio Website is a personal and constituency-focused digital platform highlighting Hon. Linda\u2019s programs, values, and engagements with her constituency. It provides transparency and information about her Tech Empowerment Program, Social Intervention Fund, and other community efforts.",
   "objectives": [
     "Present a professional, transparent, and accessible digital profile.",
-    "Promote awareness of Lindah\u2019s programs and initiatives.",
+    "Promote awareness of Linda\u2019s programs and initiatives.",
     "Provide online access to empowerment applications.",
     "Publish reports and testimonials for transparency."
   ],
@@ -85,7 +85,7 @@
     "strategy": "Static site generation, SEO meta tags, sitemap, lazy-loaded images"
   },
   "maintenance": {
-    "owner": "Hon. Lindah\u2019s communications team",
+    "owner": "Hon. Linda\u2019s communications team",
     "developer_notes": [
       "Add new markdown/blog posts manually",
       "Upload reports to /public/reports"
@@ -110,5 +110,5 @@
     "phase_4": "Reports and transparency (1 week)",
     "phase_5": "Testing and deployment (3 days)"
   },
-  "final_deliverable": "A fully functional, mobile-friendly website showcasing Hon. Lindah\u2019s programs and achievements."
+  "final_deliverable": "A fully functional, mobile-friendly website showcasing Hon. Linda\u2019s programs and achievements."
 }

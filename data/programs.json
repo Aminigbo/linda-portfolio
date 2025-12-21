@@ -1,16 +1,32 @@
 [
   {
+    "name": "Effective Representation",
+    "description": "Effective Representation is the foundation of responsive governance. Through active participation in legislative processes, regular stakeholder engagement, and continuous consultation with constituents, Hon. Linda Somiari-Stewart ensures that the voices, needs, and interests of the people of Okrika are clearly represented and defended at the Rivers State House of Assembly. This program is focused on advocacy, accountability, and delivering people-centered policies that translate into real impact.",
+    "details": "Our Tech Empowerment Program provides comprehensive technology training, hands-on internships with leading tech companies, and micro-grants to support innovative startup ideas. This initiative aims to bridge the digital divide and create sustainable employment opportunities for youth in Okrika.",
+    "benefits": [
+      "Strong Voice at the State Assembly",
+      "People-Centered Lawmaking",
+      "Transparent & Accountable Leadership",
+      "Regular Community Engagement",
+      "Advocacy for Okrika’s Development",
+      "Policy Decisions with Real Impact"
+    ],
+    "eligibility": "To ensure Okrika’s interests are strongly represented, protected, and advanced through responsive and accountable leadership.",
+    "applicationLink": "/contact"
+  },
+  {
     "name": "Tech Empowerment",
     "description": "Providing digital skills training, tech tools, and exposure opportunities to prepare youths and women for global technology-driven careers.",
     "details": "Our Tech Empowerment Program provides comprehensive technology training, hands-on internships with leading tech companies, and micro-grants to support innovative startup ideas. This initiative aims to bridge the digital divide and create sustainable employment opportunities for youth in Okrika.",
     "benefits": [
-      "Free technology training courses",
-      "Paid internship opportunities",
-      "Startup micro-grants up to ₦500,000",
-      "Mentorship from industry experts",
-      "Job placement assistance"
+      "In-Demand Digital Skills",
+      "Access to Tech Tools",
+      "Hands-On Internship Experience",
+      "Startup & Innovation Support",
+      "Employment & Income Opportunities",
+      "Bridging the Digital Divide"
     ],
-    "eligibility": "Open to all Okrika residents aged 18-35 with interest in technology",
+    "eligibility": "To equip youths and women with digital skills and tools for sustainable careers in the global tech economy",
     "applicationLink": "/contact"
   },
   {
@@ -18,13 +34,14 @@
     "description": "Supporting vulnerable families through welfare programs, community relief efforts, and targeted assistance aimed at improving daily living conditions.",
     "details": "The Social Intervention Fund focuses on empowering women and supporting children's education through micro-grants, scholarship programs, and community-based initiatives. This program aims to improve quality of life and create pathways to economic independence.",
     "benefits": [
-      "Education scholarships for children",
-      "Women's entrepreneurship micro-grants",
-      "Healthcare assistance programs",
-      "Skills acquisition training",
-      "Childcare support services"
+      "Support for Vulnerable Families",
+      "Women Empowerment Initiatives",
+      "Access to Education for Children",
+      "Micro-Grants for Small Livelihoods",
+      "Community Welfare & Relief Support",
+      "Improved Quality of Life"
     ],
-    "eligibility": "Open to women and families in Okrika constituency",
+    "eligibility": "To improve quality of life by supporting vulnerable families, empowering women, and securing better educational opportunities for children.",
     "applicationLink": "/contact"
   },
   {
@@ -32,13 +49,14 @@
     "description": "Promoting quality learning through scholarships, school support initiatives, and academic resources for students across Okrika.",
     "details": "Our Community Education Initiative provides comprehensive educational support including scholarships, school supplies, tutoring programs, and infrastructure improvements for schools in the constituency.",
     "benefits": [
-      "Full and partial scholarships",
-      "Free school supplies distribution",
-      "After-school tutoring programs",
-      "School infrastructure improvements",
-      "Teacher training workshops"
+      "Access to Scholarships",
+      "School Supplies & Learning Resources",
+      "Academic Support & Tutoring",
+      "Improved School Infrastructure",
+      "Reduced Financial Burden on Families",
+      "Increased Student Performance & Retention"
     ],
-    "eligibility": "Open to students and educational institutions in Okrika constituency",
+    "eligibility": "To ensure every child in Okrika has access to quality education and the resources needed to succeed.",
     "applicationLink": "/contact"
   },
   {
@@ -46,14 +64,14 @@
     "description": "Implementing health outreaches, awareness campaigns, and community wellness initiatives to ensure a healthier constituency.",
     "details": "The Healthcare Access Program focuses on making quality healthcare services available to all residents through mobile clinics, health screenings, medication assistance, and health education programs.",
     "benefits": [
-      "Free health screenings",
-      "Mobile clinic services",
-      "Medication assistance",
-      "Health education workshops",
-      "Partnerships with healthcare providers"
+      "Access to Quality Healthcare Services",
+      "Free Health Screenings & Checkups",
+      "Medication & Treatment Support",
+      "Increased Health Awareness",
+      "Community Wellness Outreach",
+      "Improved Public Health Outcomes"
     ],
-    "eligibility": "Open to all residents of Okrika constituency",
+    "eligibility": "To promote a healthier constituency through accessible healthcare, preventive care, and community wellness initiatives.",
     "applicationLink": "/contact"
   }
 ]
-

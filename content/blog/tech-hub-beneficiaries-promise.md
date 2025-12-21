@@ -2,7 +2,7 @@
 title: Hon. Linda Somiari-Stewart Delivers on Tech Hub Beneficiaries Promise
 date: 2024-04-15
 excerpt: Hon. Linda Somiari-Stewart fulfills her commitment to tech scholarship beneficiaries with laptops, MiFi devices, and completion certificates, empowering Okrika youth for the digital economy.
-author: Hon. Lindah
+author: Hon. Linda
 image: /slides/s1.jpeg
 ---
 

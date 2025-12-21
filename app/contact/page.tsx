@@ -154,7 +154,7 @@ export default function ContactPage() {
                     Email
                   </h3>
                   <p className="text-gray-600">
-                    contact@honlindah.okrika.gov.ng
+                    contact@honLinda.okrika.gov.ng
                   </p>
                 </div>
               </div>
