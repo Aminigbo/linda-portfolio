@@ -12,6 +12,48 @@
     ],
     "eligibility": "Open to all Okrika residents aged 18-35 with interest in technology",
     "applicationLink": "/contact"
+  },
+  {
+    "name": "Social Intervention",
+    "description": "Supporting vulnerable families through welfare programs, community relief efforts, and targeted assistance aimed at improving daily living conditions.",
+    "details": "The Social Intervention Fund focuses on empowering women and supporting children's education through micro-grants, scholarship programs, and community-based initiatives. This program aims to improve quality of life and create pathways to economic independence.",
+    "benefits": [
+      "Education scholarships for children",
+      "Women's entrepreneurship micro-grants",
+      "Healthcare assistance programs",
+      "Skills acquisition training",
+      "Childcare support services"
+    ],
+    "eligibility": "Open to women and families in Okrika constituency",
+    "applicationLink": "/contact"
+  },
+  {
+    "name": "Educational Advancement Program",
+    "description": "Promoting quality learning through scholarships, school support initiatives, and academic resources for students across Okrika.",
+    "details": "Our Community Education Initiative provides comprehensive educational support including scholarships, school supplies, tutoring programs, and infrastructure improvements for schools in the constituency.",
+    "benefits": [
+      "Full and partial scholarships",
+      "Free school supplies distribution",
+      "After-school tutoring programs",
+      "School infrastructure improvements",
+      "Teacher training workshops"
+    ],
+    "eligibility": "Open to students and educational institutions in Okrika constituency",
+    "applicationLink": "/contact"
+  },
+  {
+    "name": "Health & Community Wellbeing",
+    "description": "Implementing health outreaches, awareness campaigns, and community wellness initiatives to ensure a healthier constituency.",
+    "details": "The Healthcare Access Program focuses on making quality healthcare services available to all residents through mobile clinics, health screenings, medication assistance, and health education programs.",
+    "benefits": [
+      "Free health screenings",
+      "Mobile clinic services",
+      "Medication assistance",
+      "Health education workshops",
+      "Partnerships with healthcare providers"
+    ],
+    "eligibility": "Open to all residents of Okrika constituency",
+    "applicationLink": "/contact"
   }
 ]
 
