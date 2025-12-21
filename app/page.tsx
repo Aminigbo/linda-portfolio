@@ -217,7 +217,7 @@ export default async function Home() {
                     </div>
                     <div>
                       <p className="text-lg text-gray-900 font-semibold mb-1" style={{ fontFamily: 'cursive' }}>
-                        Hon. Linda
+                      Hon. Linda Somiari-Stewart
                       </p>
                       <p className="text-sm text-gray-600">
                         Member, Rivers State House of Assembly
@@ -458,9 +458,9 @@ export default async function Home() {
               href="/programs"
               className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              Apply to Programs
+              View Our Programs
             </Link>
-            <Link
+            {/* <Link
               href="/events"
               className="bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-colors border border-blue-300"
             >
@@ -471,7 +471,7 @@ export default async function Home() {
               className="bg-transparent text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors border border-white"
             >
               View Reports
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

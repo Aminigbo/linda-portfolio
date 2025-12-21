@@ -107,32 +107,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0">
-                  <svg
-                    className="w-6 h-6 text-blue-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">
-                    Phone
-                  </h3>
-                  <p className="text-gray-600">
-                    +234 (0) XXX XXX XXXX
-                  </p>
-                </div>
-              </div>
-
+              
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <svg
@@ -154,13 +129,13 @@ export default function ContactPage() {
                     Email
                   </h3>
                   <p className="text-gray-600">
-                    contact@honLinda.okrika.gov.ng
+                  Email: contact@honlinda.com
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 bg-blue-50 rounded-lg p-6">
+            {/* <div className="mt-8 bg-blue-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">
                 Office Hours
               </h3>
@@ -171,7 +146,7 @@ export default function ContactPage() {
                 <br />
                 Sunday: Closed
               </p>
-            </div>
+            </div> */}
             </div>
           </AnimateOnScroll>
 

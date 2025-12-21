@@ -99,7 +99,7 @@ export default function ProgramsPage() {
         </div>
 
         {/* Additional Info Section */}
-        <AnimateOnScroll animation="slide-up" delay={600}>
+        {/* <AnimateOnScroll animation="slide-up" delay={600}>
           <div className="bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-lg p-8 md:p-12 text-center">
           <h2 className="text-3xl font-bold mb-4">
             Interested in Our Programs?
@@ -115,7 +115,7 @@ export default function ProgramsPage() {
             Contact Us
           </Link>
           </div>
-        </AnimateOnScroll>
+        </AnimateOnScroll> */}
       </div>
     </div>
   );
