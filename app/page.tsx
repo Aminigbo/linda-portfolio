@@ -429,9 +429,9 @@ export default async function Home() {
                     <p className="font-semibold text-gray-900">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-gray-600">
+                    {/* <p className="text-sm text-gray-600">
                       {testimonial.role}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </AnimateOnScroll>
