@@ -89,13 +89,13 @@ export default async function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow block"
                 >
-                <div className="text-sm text-gray-500 mb-2">
+                {/* <div className="text-sm text-gray-500 mb-2">
                   {new Date(post.frontmatter.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric',
                   })}
-                </div>
+                </div> */}
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">
                   {post.frontmatter.title}
                 </h2>
@@ -104,7 +104,7 @@ export default async function BlogPage() {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-gray-500">
-                    By {post.frontmatter.author}
+                    By Admin
                   </span>
                   <span className="text-blue-600 font-semibold">
                     Read More →
