@@ -314,13 +314,15 @@ export default async function Home() {
             <AnimateOnScroll animation="slide-up" delay={300}>
               <div className="w-full">
                 <div className="aspect-video w-full bg-gray-900 rounded-lg overflow-hidden shadow-xl mb-6">
-                  <iframe
+                  <video
                     className="w-full h-full"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="Program Overview Video"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                    controls
+                    preload="metadata"
+                    poster="/slides/s1.jpeg"
+                  >
+                    <source src="/vid1.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 <AnimateOnScroll animation="slide-up" delay={400}>
                   <div className="text-center">
